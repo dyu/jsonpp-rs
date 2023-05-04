@@ -1,3 +1,7 @@
+use mimalloc::MiMalloc;
+#[global_allocator]
+static GLOBAL: MiMalloc = MiMalloc;
+
 use std::ffi::{OsStr, OsString};
 use std::fs::{self, File};
 use std::io::{self, BufReader, BufWriter, Read};
