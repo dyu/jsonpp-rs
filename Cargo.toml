@@ -16,3 +16,4 @@ serde-transcode = "1.0"
 clap = "~2.31"
 error-chain = "0.12"
 filebuffer = "0.4.0"
+mimalloc = { version = "0.1.37", default-features = false }
